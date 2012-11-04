@@ -241,57 +241,61 @@ RCTRL::Return
 >^+.::Send, ->
 
 ;数字の操作
->^a::Send {1}
->^+a::Send +{1}
->^s::Send {2}
->^+s::Send +{2}
->^d::Send {3}
->^+d::Send +{3}
->^f::Send {4}
->^+f::Send +{4}
->^g::Send {5}
->^+g::Send +{5}
->^h::Send {6}
->^+h::Send +{6}
->^j::Send {7}
->^+j::Send +{7}
->^k::Send {8}
->^+k::Send +{8}
->^l::Send {9}
->^+l::Send +{9}
->^;::Send {0}
->^+;::Send +{0}
+>^w::Send {1}
+>^+w::Send +{1}
+>^e::Send {2}
+>^+e::Send +{2}
+>^r::Send {3}
+>^+r::Send +{3}
+>^t::Send {4}
+>^+t::Send +{4}
+>^y::Send {5}
+>^+y::Send +{5}
+>^u::Send {6}
+>^+u::Send +{6}
+>^i::Send {7}
+>^+i::Send +{7}
+>^o::Send {8}
+>^+o::Send +{8}
+>^p::Send {9}
+>^+p::Send +{9}
+>^vkC0::Send {0}
+>^+vkC0::Send +{0}
+; vkC0 = at sign
 
 ;カーソル操作
->^q::Send {Home}
->^+q::Send +{Home}
+;>^u::Send ^{Up}
+;>^+u::Send +^{Up}
 
->^w::Send ^{Left}
->^+w::Send +^{Left}
+>^a::Send {Home}
+>^+a::Send +{Home}
 
->^e::Send {Left}
->^+e::Send +{Left}
+>^s::Send ^{Left}
+>^+s::Send +^{Left}
 
->^r::Send {Right}
->^+r::Send +{Right}
+>^d::Send {PgDn}
+>^+d::Send +{PgDn}
 
->^t::Send ^{Right}
->^+t::Send +^{Right}
+>^f::Send {PgUp}
+>^+f::Send +^{PgUp}
 
->^y::Send {End}
->^+y::Send +{End}
+>^g::Send ^{Right}
+>^+g::Send +^{Right}
 
->^u::Send ^{Up}
->^+u::Send +^{Up}
+>^h::Send {Left}
+>^+h::Send +{Left}
 
->^i::Send {Up}
->^+i::Send +{Up}
+>^j::Send {Down}
+>^+j::Send +{Down}
 
->^o::Send {Down}
->^+o::Send +{Down}
+>^k::Send {Up}
+>^+k::Send +{Up}
 
->^p::Send {PgDn}
->^+p::Send +{PgDn}
+>^l::Send {Right}
+>^+l::Send +{Right}
+
+>^;::Send {End}
+>^+;::Send +{End}
 
 ;#UseHook off
 ;#InstallKeybdHook off
